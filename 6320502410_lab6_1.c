@@ -10,23 +10,26 @@ int main()
     {
         scanf("%s",name[i]);
     }
-    char h[100]="5a";
+    char h[100]="";
     printf("\n");
-    for(i=0; i<n;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=i;j<n-1;j++)
+        for(j=0; j<n-1; j++)
         {
-            if(strcmp(name[i],name[j+1])<0)
+            if(strcmp(name[j],name[j+1])!=1)
             {
-                printf("%d %d\n",i,strcmp(name[i],name[j+1]));
-                strcpy(h,name[i]);
-                strcpy(name[i]," ");
-                strcpy(name[i],name[i+1]);
-                strcpy(name[i+1]," ");
-                strcpy(name[i+1],h);
+                strcat(h,name[j]);
+                strcpy(name[j],"");
+                strcat(name[j],name[j+1]);
+                strcpy(name[j+1],"");
+                strcpy(name[j+1],h);
             }
-            strcpy(h," ");
+            strcpy(h,"");
         }
+    }
+    for(i=n-1; i>=0; i--)
+    {
         printf("%s\n",name[i]);
     }
+    return 0;
 }
