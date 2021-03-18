@@ -14,4 +14,16 @@ int main()
         a[j-1]++;
         a[k-1]++;
     }
+    int max=a[0],min=a[0];
+    for(i=0;i<n;i++)
+    {
+        if(max < a[i])
+        {
+            max = a[i];
+        }
+        if(min > a[i])
+        {
+            min = a[i];
+        }
+    }
 }
