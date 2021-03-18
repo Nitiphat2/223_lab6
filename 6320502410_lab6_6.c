@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 int main()
 {
     int n;
@@ -12,13 +13,10 @@ int main()
             a[i][j]=0;
         }
     }
-    char k[250];
-    scanf(" %s",k);
-    for(i=0;i<n;i++)
+    char m[250];
+    scanf(" %s",m);
+    for(i=0;i<strlen(m);i++)
     {
-        for(j=0;j<n;j++)
-        {
-            a[i][j]=0;
-        }
+
     }
 }
