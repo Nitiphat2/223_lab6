@@ -11,7 +11,6 @@ int main()
         scanf("%s",name[i]);
     }
     char h[100]="";
-    printf("\n");
     for(i=0;i<n;i++)
     {
         for(j=0; j<n-1; j++)
