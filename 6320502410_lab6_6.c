@@ -22,33 +22,54 @@ int main()
     {
         if(m[i] == 'U')
         {
-            a[j-1][k]=1;
             j--;
+            if(j>=0)
+            {
+                a[j][k]=1;
+            }
+            else
+            {
+                j++;
+            }
         }
         else if(m[i] == 'D')
         {
-            a[j+1][k]=1;
             j++;
+            if(j<n)
+            {
+                a[j][k]=1;
+            }
+            else
+            {
+                j--;
+            }
         }
         else if(m[i] == 'L')
         {
-            a[j][k-1]=1;
             k--;
+             if(k>=0)
+            {
+                a[j][k]=1;
+            }
+            else
+            {
+                k++;
+            }
         }
         else if(m[i] == 'R')
         {
-            a[j][k+1]=1;
             k++;
+             if(k<n)
+            {
+                a[j][k]=1;
+            }
+            else
+            {
+                k--;
+            }
         }
     }
     for(i=0; i<n; i++)
-    {
-        for(j=0; j<n; j++)
-        {
-            printf("%d",a[i][j]);
-        }
-    }
-    /*for(i=0; i<n; i++)
     {
         for(j=0; j<n; j++)
         {
@@ -83,5 +104,5 @@ int main()
             }
         }
         printf("\n");
-    }*/
+    }
 }
