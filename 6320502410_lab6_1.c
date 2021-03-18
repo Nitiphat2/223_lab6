@@ -15,15 +15,12 @@ int main()
     {
         for(j=0; j<n-1; j++)
         {
-            if(strcmp(name[j],name[j+1])!=1)
+            if(strcmp(name[j],name[j+1])<0)
             {
-                strcat(h,name[j]);
-                strcpy(name[j],"");
-                strcat(name[j],name[j+1]);
-                strcpy(name[j+1],"");
+                strcpy(h,name[j]);
+                strcpy(name[j],name[j+1]);
                 strcpy(name[j+1],h);
             }
-            strcpy(h,"");
         }
     }
     for(i=n-1; i>=0; i--)
