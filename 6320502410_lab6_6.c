@@ -17,7 +17,6 @@ int main()
     scanf(" %s",m);
     j=0;
     k=0;
-    a[0][0]=1;
     for(i=0; i<strlen(m); i++)
     {
         if(m[i] == 'U')
@@ -26,6 +25,7 @@ int main()
             if(j>=0)
             {
                 a[j][k]=1;
+                a[0][0]=1;
             }
             else
             {
@@ -38,6 +38,7 @@ int main()
             if(j<n)
             {
                 a[j][k]=1;
+                a[0][0]=1;
             }
             else
             {
@@ -50,6 +51,7 @@ int main()
              if(k>=0)
             {
                 a[j][k]=1;
+                a[0][0]=1;
             }
             else
             {
@@ -62,6 +64,7 @@ int main()
              if(k<n)
             {
                 a[j][k]=1;
+                a[0][0]=1;
             }
             else
             {
