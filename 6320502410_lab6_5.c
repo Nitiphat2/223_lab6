@@ -20,7 +20,8 @@ int main()
             sum = sum + a[i][j];
         }
     }
-    sum = round(sum/(n*m));
+    int o=n*m;
+    sum = round(sum/o);
     for(i=0;i<m; i++)
     {
         for(j=0; j<n; j++)
@@ -31,7 +32,7 @@ int main()
             }
             if(a[i][j]>sum)
             {
-                k = k-(a[i][j]-sum);
+                k = k-(a[i][j] - sum);
             }
         }
     }
