@@ -20,7 +20,7 @@ int main()
             sum = sum + a[i][j];
         }
     }
-    sum = round(sum/(n*m))+1;
+    sum = round(sum/(n*m));
     for(i=0;i<m; i++)
     {
         for(j=0; j<n; j++)
