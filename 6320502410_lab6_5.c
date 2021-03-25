@@ -12,7 +12,7 @@ int main()
             scanf("%d",&a[i][j]);
         }
     }
-    int sum=0;
+    float sum=0;
     for(i=0;i<m; i++)
     {
         for(j=0; j<n; j++)
@@ -20,8 +20,7 @@ int main()
             sum = sum + a[i][j];
         }
     }
-    int o=n*m;
-    sum = round(sum/o);
+    sum = round(sum/(n*m));
     for(i=0;i<m; i++)
     {
         for(j=0; j<n; j++)
